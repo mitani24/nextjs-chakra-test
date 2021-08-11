@@ -10,8 +10,9 @@ export default function Home() {
         placeholder="Basic usage"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
+        data-testid="hoge"
       />
-      <Text>{message}</Text>
+      <Text data-testid="fuga">{message}</Text>
     </Box>
   );
 }
